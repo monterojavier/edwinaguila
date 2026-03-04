@@ -51,15 +51,25 @@ export const MUSIC_TRACKS = [
   }
 ];
 
+/* Add more credits here 
+
+--- Template ---
+{ 
+    title: "", 
+    role: "", 
+    production: "", 
+    year: "", 
+    articleUrl: "",
+    videoUrl: "" 
+},
+*/
 export const CREDITS = [
   { 
-    title: "Shadow Play", 
-    role: "Protagonist", 
-    production: "Independent Feature", 
-    year: "2025", 
-    articleUrl: "https://example.com/shadow-play-article",
-    videoUrl: "https://example.com/shadow-play-video" 
-  },
-  { title: "Midnight in Soho", role: "The Stranger", production: "West End Production", year: "2024" },
-  { title: "Fragments", role: "Ensemble", production: "Art House Short", year: "2023" },
+    title: "", 
+    role: "", 
+    production: "", 
+    year: "", 
+    articleUrl: "",
+    videoUrl: "" 
+},
 ];
