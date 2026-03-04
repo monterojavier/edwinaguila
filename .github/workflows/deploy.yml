@@ -35,7 +35,9 @@ jobs:
           cache: 'npm'
           
       - name: Install dependencies
-        run: npm ci || npm install
+        # Overriding the lockfile to prevent cross-platform optional dependency issues 
+        # (macOS lockfile missing Linux rollup binaries)
+        run: npm install --no-package-lock
         
       - name: Build
         run: npm run build
