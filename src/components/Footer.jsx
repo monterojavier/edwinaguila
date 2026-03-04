@@ -10,15 +10,8 @@ export default function Footer() {
         <p className="footer-description">
           For any inquiries, please reach out and follow on social media.
         </p>
-        {/* Remove email for now and just keep socials */}
+  
         <div className="footer-contact">
-          <a 
-            href="mailto:edwinaguila00@gmail.com" 
-            className="footer-email"
-          >
-            edwinaguila00@gmail.com
-          </a>
-          
           <div className="footer-socials">
             <motion.a 
               whileHover={{ scale: 1.1, backgroundColor: "#833AB4", color: "#fff", borderColor: "#833AB4" }}

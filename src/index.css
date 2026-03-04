@@ -526,6 +526,13 @@ button {
   color: var(--zinc-900);
 }
 
+.credit-medium {
+  color: var(--zinc-600);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
 .credit-role {
   color: var(--zinc-500);
   font-style: italic;

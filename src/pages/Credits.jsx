@@ -20,6 +20,9 @@ export default function Credits() {
               className="credit-item"
             >
               <div className="credit-info">
+                {item.medium && (
+                  <p className="credit-medium">{item.medium}</p>
+                )}
                 <h3 className="credit-title">{item.title}</h3>
                 <p className="credit-role">{item.role}</p>
                 <p className="credit-production">{item.production}</p>
@@ -27,30 +30,19 @@ export default function Credits() {
               </div>
               
               <div className="credit-actions">
-                {item.articleUrl && (
-                  <motion.a 
+                {item.links && item.links.map((link, i) => (
+                  <motion.a
+                    key={i}
                     whileHover={{ scale: 1.05, backgroundColor: "#4f46e5", borderColor: "#4f46e5" }}
                     whileTap={{ scale: 0.95 }}
-                    href={item.articleUrl} 
-                    target="_blank" 
+                    href={link.url}
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="credit-button"
                   >
-                    Read Article <ExternalLink />
+                    {link.label} {link.label.toLowerCase().includes("video") ? <Play /> : <ExternalLink />}
                   </motion.a>
-                )}
-                {item.videoUrl && (
-                  <motion.a 
-                    whileHover={{ scale: 1.05, backgroundColor: "#4f46e5", borderColor: "#4f46e5" }}
-                    whileTap={{ scale: 0.95 }}
-                    href={item.videoUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="credit-button"
-                  >
-                    Watch Video <Play />
-                  </motion.a>
-                )}
+                ))}
               </div>
             </motion.div>
           ))}

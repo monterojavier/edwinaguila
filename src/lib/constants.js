@@ -17,24 +17,52 @@ export const HEADSHOTS = [
 /* Add more credits here 
 
 --- Template ---
-{ 
+{
+    medium: "",       // e.g. "Theater", "Film", "TV" etc.
     title: "", 
     role: "", 
     production: "", 
     year: "", 
-    articleUrl: "",
-    videoUrl: "" 
+    links: [            // multiple links allowed; each can have a label and URL
+      { label: "", url: "" },
+      // { label: "Watch Video", url: "" },
+      // { label: "Read Article", url: "" }
+    ]
 },
 */
 export const CREDITS = [
   { 
-    title: "", 
-    role: "", 
-    production: "", 
-    year: "", 
-    articleUrl: "",
-    videoUrl: "" 
-},
+    medium: "Film",
+    title: "Moments in Horror", 
+    role: "Guest Star", 
+    production: "Twist to the Story Productions", 
+    year: "2023", 
+    links: [
+      { label: "Watch Video", url: "https://www.youtube.com/shorts/lrpv1spiH7g" }
+    ]
+  },
+
+  { 
+    medium: "Theater",
+    title: "Midsummer Nights Dream", 
+    role: "Lysander/Flute/Thisby", 
+    production: "Theater 2020", 
+    year: "2021", 
+    links: []
+  },
+
+  { 
+    medium: "Sketch Comedy",
+    title: "Lyricist Lounge Sketch Program", 
+    role: "Slim/Best Friend/Cop", 
+    production: "Lyricist Lounge", 
+    year: "2019", 
+    links: [
+      { label: "Watch Video", url: "https://vimeo.com/359134152" },
+      { label: "Watch Video", url: "https://vimeo.com/359112949" },
+      { label: "Watch Video", url: "https://vimeo.com/359114012" },
+    ]
+  },
 ];
 
 /* -------- MUSIC -------- */
