@@ -3,6 +3,9 @@
 ## Getting Started
 
 ```bash
+# copy project over locally
+git clone https://github.com/monterojavier/edwinaguila.git
+
 # first install dependencies
 npm install
 
