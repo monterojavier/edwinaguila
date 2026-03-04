@@ -5,13 +5,11 @@ export const SECTIONS = [
   { id: "music", label: "Music", href: "/music" },
 ];
 
+// Add more photos to Headshots here 
 export const HEADSHOTS = [
-  { src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800", alt: "Edwin Aguila Headshot 1" },
-  { src: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=800", alt: "Edwin Aguila Headshot 2" },
-  { src: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=800", alt: "Edwin Aguila Headshot 3" },
-  { src: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=800", alt: "Edwin Aguila Headshot 4" },
-  { src: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=800", alt: "Edwin Aguila Headshot 5" },
-  { src: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&q=80&w=800", alt: "Edwin Aguila Headshot 6" },
+  { src: "src/assets/headshots-photos/edwin-aguila-headshot-1.JPG", alt: "Edwin Aguila Headshot 1" },
+  { src: "src/assets/headshots-photos/edwin-aguila-headshot-2.JPG", alt: "Edwin Aguila Headshot 2" },
+  { src: "src/assets/headshots-photos/edwin-aguila-headshot-3.JPG", alt: "Edwin Aguila Headshot 3" },
 ];
 
 export const MUSIC_TRACKS = [
