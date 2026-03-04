@@ -1,9 +1,20 @@
 import { motion } from "framer-motion";
-import { Music as MusicIcon, Youtube, Play, Pause } from "lucide-react";
+import { Play, Pause } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { MUSIC_TRACKS } from "@/lib/constants";
+import { FaSpotify, FaApple, FaYoutube, FaSoundcloud, FaBandcamp, FaMusic } from "react-icons/fa";
+
+function getPlatformIcon(label, size = 16) {
+  const name = label.toLowerCase();
+  if (name.includes("spotify")) return <FaSpotify size={size} />;
+  if (name.includes("apple")) return <FaApple size={size} />;
+  if (name.includes("youtube")) return <FaYoutube size={size} />;
+  if (name.includes("soundcloud")) return <FaSoundcloud size={size} />;
+  if (name.includes("bandcamp")) return <FaBandcamp size={size} />;
+  return <FaMusic size={size} />;
+}
 
 export default function MusicPage() {
   const [playingTrack, setPlayingTrack] = useState(null);
@@ -108,12 +119,14 @@ export default function MusicPage() {
                   {track.links.map((link, lIdx) => (
                     <motion.a
                       key={lIdx}
-                      whileHover={{ scale: 1.05, backgroundColor: "#4f46e5", color: "white" }}
+                      whileHover={{ scale: 1.05, backgroundColor: link.color || "#4f46e5", color: "white" }}
                       whileTap={{ scale: 0.95 }}
                       href={link.url}
                       className="music-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      {link.label === "YouTube" ? <Youtube size={16} /> : <MusicIcon size={16} />}
+                      {getPlatformIcon(link.label, 16)}
                       {link.label}
                     </motion.a>
                   ))}
