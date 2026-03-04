@@ -67,44 +67,44 @@ export const CREDITS = [
 */
 export const MUSIC_TRACKS = [
   {
-    title: "Resonance",
-    type: "EP",
-    genre: "Experimental / Ambient / Soul",
-    cover: "https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?auto=format&fit=crop&q=80&w=800",
-    audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+    title: "You Can Be A Hero Too (ft. Mijori)",
+    type: "Single",
+    genre: "Hip-Hop/R&B",
+    cover: "src/assets/music-tracks/ANIMELien Stuff/You Can Be A Hero Cover.jpg",
+    audioUrl: "src/assets/music-tracks/ANIMELien Stuff/You Can Be A Hero Too 15.mp3",
     links: [
-      { label: "Spotify", url: "https://open.spotify.com/track/7AeM1BGYM7emrqmQn1PuWv", color: "#1db954ff" },
-      { label: "Apple Music", url: "#", color: "#E50010" },
-      { label: "YouTube", url: "#", color: "#FF0000" },
-      { label: "SoundCloud", url: "#", color: "#FF5500" },
-      { label: "Bandcamp", url: "#", color: "#555555" },
-      { label: "Tidal", url: "#", color: "#000000" },
-      { label: "Amazon Music", url: "#", color: "#000000" },
-      { label: "Deezer", url: "#", color: "#000000" },
+      // { label: "Spotify", url: "https://open.spotify.com/track/7AeM1BGYM7emrqmQn1PuWv", color: "#1db954ff" },
+      // { label: "Apple Music", url: "#", color: "#E50010" },
+      { label: "YouTube", url: "https://www.youtube.com/watch?v=0qAyGYYjPsk", color: "#FF0000" },
+      // { label: "SoundCloud", url: "#", color: "#FF5500" },
+      // { label: "Bandcamp", url: "#", color: "#555555" },
+      // { label: "Tidal", url: "#", color: "#000000" },
+      // { label: "Amazon Music", url: "#", color: "#000000" },
+      // { label: "Deezer", url: "#", color: "#000000" },
     ]
   },
-  {
-    title: "Echoes of Silence",
-    type: "Single",
-    genre: "Cinematic / Orchestral",
-    cover: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&q=80&w=800",
-    audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
-    links: [
-      { label: "Spotify", url: "#" },
-      { label: "Apple Music", url: "#" },
-      { label: "YouTube", url: "#" },
-    ]
-  },
-  {
-    title: "Neon Dreams",
-    type: "Single",
-    genre: "Synthwave / Lo-fi",
-    cover: "https://images.unsplash.com/photo-1619983081563-430f63602796?auto=format&fit=crop&q=80&w=800",
-    audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
-    links: [
-      { label: "Spotify", url: "#" },
-      { label: "Apple Music", url: "#" },
-      { label: "YouTube", url: "#" },
-    ]
-  }
+  // {
+  //   title: "Echoes of Silence",
+  //   type: "Single",
+  //   genre: "Cinematic / Orchestral",
+  //   cover: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&q=80&w=800",
+  //   audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
+  //   links: [
+  //     { label: "Spotify", url: "#" },
+  //     { label: "Apple Music", url: "#" },
+  //     { label: "YouTube", url: "#" },
+  //   ]
+  // },
+  // {
+  //   title: "Neon Dreams",
+  //   type: "Single",
+  //   genre: "Synthwave / Lo-fi",
+  //   cover: "https://images.unsplash.com/photo-1619983081563-430f63602796?auto=format&fit=crop&q=80&w=800",
+  //   audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
+  //   links: [
+  //     { label: "Spotify", url: "#" },
+  //     { label: "Apple Music", url: "#" },
+  //     { label: "YouTube", url: "#" },
+  //   ]
+  // }
 ];

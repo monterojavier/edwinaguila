@@ -6,11 +6,11 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-inner">
-        <h2 className="footer-title">Get In Touch</h2>
+        <h2 className="footer-title">Contact</h2>
         <p className="footer-description">
-          For inquiries regarding acting roles, artistic collaborations, or bookings, please reach out via email or follow on social media.
+          For any inquiries, please reach out and follow on social media.
         </p>
-        
+        {/* Remove email for now and just keep socials */}
         <div className="footer-contact">
           <a 
             href="mailto:edwinaguila00@gmail.com" 
