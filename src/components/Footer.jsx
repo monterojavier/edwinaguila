@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Instagram, Twitter, Music } from "lucide-react";
+import { FaInstagram, FaSpotify,FaApple, FaYoutube } from "react-icons/fa";
+
 
 export default function Footer() {
   return (
@@ -12,36 +13,52 @@ export default function Footer() {
         
         <div className="footer-contact">
           <a 
-            href="mailto:hello@edwinaguila.com" 
+            href="mailto:edwinaguila00@gmail.com" 
             className="footer-email"
           >
-            hello@edwinaguila.com
+            edwinaguila00@gmail.com
           </a>
           
           <div className="footer-socials">
             <motion.a 
-              whileHover={{ scale: 1.1, backgroundColor: "#4f46e5", color: "#fff", borderColor: "#4f46e5" }}
+              whileHover={{ scale: 1.1, backgroundColor: "#833AB4", color: "#fff", borderColor: "#833AB4" }}
               whileTap={{ scale: 0.9 }}
-              href="#" 
+              href="https://www.instagram.com/officialeamusic/" 
               className="footer-social-link"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <Instagram />
+              <FaInstagram />
             </motion.a>
-            <motion.a 
-              whileHover={{ scale: 1.1, backgroundColor: "#4f46e5", color: "#fff", borderColor: "#4f46e5" }}
+            {/* <motion.a 
+              whileHover={{ scale: 1.1, backgroundColor: "#1DB954", color: "#fff", borderColor: "#1DB954" }}
               whileTap={{ scale: 0.9 }}
               href="#" 
               className="footer-social-link"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <Twitter />
-            </motion.a>
-            <motion.a 
-              whileHover={{ scale: 1.1, backgroundColor: "#4f46e5", color: "#fff", borderColor: "#4f46e5" }}
+              < FaSpotify/>
+            </motion.a> */}
+            {/* <motion.a 
+              whileHover={{ scale: 1.1, backgroundColor: "#E50010", color: "#fff", borderColor: "#E50010" }}
               whileTap={{ scale: 0.9 }}
               href="#" 
               className="footer-social-link"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <Music />
+              < FaApple/>
+            </motion.a> */}
+            <motion.a 
+              whileHover={{ scale: 1.1, backgroundColor: "#FF0000", color: "#fff", borderColor: "#FF0000" }}
+              whileTap={{ scale: 0.9 }}
+              href="https://www.youtube.com/@OfficialEAMusic" 
+              className="footer-social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+              < FaYoutube/>
             </motion.a>
           </div>
         </div>
