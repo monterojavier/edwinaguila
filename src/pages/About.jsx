@@ -14,11 +14,15 @@ export default function About() {
             transition={{ duration: 0.8 }}
           >
             <h2 className="about-heading">About</h2>
+            {/* About Section */}
             <p className="about-text">
-              Edwin Aguila is a multidisciplinary artist and actor based in New York. With a passion for storytelling that transcends mediums, he explores the human condition through performance, music, and visual arts.
+              My name is Edwin Aguila, but in the hip-hop world, I go by EA. I’m a proud Puerto Rican from East New York, Brooklyn, and everything I create is deeply rooted in my love for my culture and community.
             </p>
             <p className="about-text">
-              Whether on stage or in the studio, Edwin brings a raw authenticity and minimalistic elegance to every project, seeking the profound in the simple.
+              In the acting realm, I’m known for my Afro and portraying the "anime tech nerd musician" type. I continue to train on-camera and am always eager to improve and make a meaningful impact.
+            </p>
+            <p className="about-text">
+              On the music side, I’m currently working on a special project called "ANIMELien," which blends my passions for storytelling, music, and anime. Through this project, I explore what it means to feel like an outsider while celebrating my love for my favorite anime.
             </p>
           </motion.div>
           <motion.div
@@ -27,8 +31,9 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="about-image-wrapper"
           >
+            {/* Image Section */}
             <img 
-              src="https://images.unsplash.com/photo-1488161628813-04466f872be2?auto=format&fit=crop&q=80&w=800" 
+              src="src/assets/about-photos/edwin-aguila-about-photo.jpg" 
               alt="Edwin Aguila Portrait"
               className="about-image"
             />
